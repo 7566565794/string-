@@ -10,10 +10,11 @@ int main(){
     int l1=strlen(t);
     int l2=strlen(sp);
     
-    for(int i=0;i<l1;i++){
+    for(int i=0;i<l1-l2;i++){// beacause after l1-l2 we will not find match
         int j=0;
         for(j=0;j<l2;j++){
-            if(t[i+j]!=sp[j]){
+            if(t[i+j]!=sp[j]){// if there is any character which is not similar we will never find a match and so we need to simply
+                // break the loop and move the next character.
                 break;
             }
         }
