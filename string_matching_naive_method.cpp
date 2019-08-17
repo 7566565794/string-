@@ -18,7 +18,7 @@ int main(){
                 break;
             }
         }
-        if(j==l2){
+        if(j==l2){// if in case length is equal we found the entire match.
             cout<<i<<" ";
         }
     }
